@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>مدرسہ انوارالمدارس ضلع کُرم</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Sans+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#073b2a;--green2:#0b6043;--gold:#c99b3b;--cream:#faf7ef;--ink:#17251f;--muted:#68766f;--white:#fff;--shadow:0 18px 55px rgba(0,0,0,.10)}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Noto Nastaliq Urdu",serif;line-height:2}
+h1,h2,h3,p{margin-top:0}.latin{font-family:"Noto Sans Arabic",sans-serif}
+.container{width:min(1120px,92%);margin:auto}
+.top{background:#052c20;color:#e9ddbd;font-family:"Noto Sans Arabic",sans-serif;font-size:13px;padding:7px 0}
+.top .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:rgba(250,247,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid #e7dfcd}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--green)}
+.logo{width:54px;height:54px;border:3px solid var(--gold);border-radius:50%;display:grid;place-items:center;background:var(--green);color:#f7e8bd;font-size:27px;box-shadow:inset 0 0 0 4px var(--green)}
+.brand strong{font-size:21px;display:block;line-height:1.5}.brand small{font-family:"Noto Sans Arabic";color:var(--muted)}
+nav{display:flex;gap:20px;font-family:"Noto Sans Arabic";font-size:14px}
+nav a{color:var(--ink);text-decoration:none}nav a:hover{color:var(--green2)}
+.btn{display:inline-block;padding:10px 18px;border-radius:10px;text-decoration:none;font-family:"Noto Sans Arabic";font-weight:700;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--gold);color:#182216}.btn-dark{background:var(--green);color:white}.btn-outline{border-color:#d8c89e;color:var(--green);background:white}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#063d2b,#0a6346);color:white;padding:90px 0 82px}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border:1px solid rgba(221,190,111,.24);border-radius:50%;left:-170px;top:-250px}.hero:after{content:"✦";position:absolute;color:rgba(222,191,111,.18);font-size:300px;left:8%;top:-40px}
+.hero-content{position:relative;z-index:1;max-width:780px}
+.kicker{font-family:"Noto Sans Arabic";color:#e5c879;font-size:14px;font-weight:700;letter-spacing:.3px}
+.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.35;margin:10px 0}.hero p{font-size:19px;color:#edf5ef;max-width:760px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+section{padding:76px 0}.section-head{text-align:center;margin-bottom:38px}.section-head .eyebrow{font-family:"Noto Sans Arabic";font-size:13px;color:var(--gold);font-weight:800}.section-head h2{font-size:34px;color:var(--green);margin:4px 0}.section-head p{color:var(--muted);max-width:700px;margin:auto}
+.about{display:grid;grid-template-columns:1fr 340px;gap:35px;align-items:start}
+.card{background:white;border:1px solid #eee7d8;border-radius:20px;padding:27px;box-shadow:var(--shadow)}
+.about-text{font-size:17px;text-align:justify}.seal{background:var(--green);color:white;min-height:360px;border-radius:25px;display:grid;place-items:center;text-align:center;padding:30px;position:sticky;top:105px}
+.seal .big{font-size:70px;color:#e1c36e}.seal h3{font-size:26px;margin:0;color:#f4dfaa}.seal p{color:#dce9e1}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.program{padding:28px 20px;text-align:center}.icon{font-size:38px}.program h3{font-size:22px;color:var(--green);margin:8px 0}.program p{color:var(--muted);font-size:14px}
+.admin{display:grid;grid-template-columns:1fr 1fr;gap:20px}.person{display:flex;gap:18px;align-items:center}.avatar{width:72px;height:72px;flex:none;border-radius:50%;background:#e8dfc6;border:2px solid var(--gold);display:grid;place-items:center;font-size:30px;color:var(--green)}
+.person h3{margin:0;font-size:21px}.person p{margin:3px 0 0;color:var(--muted)}
+.admission{background:linear-gradient(135deg,#f0ead9,#fff)}.form{max-width:850px;margin:auto}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field label{display:block;font-weight:700;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:12px 14px;border:1px solid #ddd5c3;border-radius:10px;background:white;font-family:inherit;font-size:15px;outline:none}.field textarea{min-height:110px;resize:vertical}.full{grid-column:1/-1}.notice{margin-top:12px;color:var(--muted);font-family:"Noto Sans Arabic";font-size:12px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-item{display:flex;gap:15px;align-items:flex-start}.contact-icon{font-size:26px}.contact a{color:var(--green2);text-decoration:none;font-family:"Noto Sans Arabic"}
+.mapbox{min-height:260px;border-radius:18px;background:#e4eadf;display:grid;place-items:center;text-align:center;padding:25px}.mapbox a{margin-top:10px}
+footer{background:#052c20;color:#dbe8df;padding:35px 0 20px;text-align:center}.footer-title{font-size:25px;color:#e6cc83}.copy{font-family:"Noto Sans Arabic";font-size:12px;color:#9db3a7;margin-top:12px}
+.float{position:fixed;bottom:20px;left:20px;z-index:30}.float a{box-shadow:0 10px 25px rgba(0,0,0,.22);border-radius:50%;width:58px;height:58px;padding:0;display:grid;place-items:center;font-size:25px}
+@media(max-width:850px){nav{display:none}.about,.contact,.admin{grid-template-columns:1fr}.seal{position:static}.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.hero{padding:65px 0}.hero p{font-size:16px}.grid,.fields{grid-template-columns:1fr}.top .container{justify-content:center}.brand strong{font-size:16px}.brand small{font-size:10px}section{padding:55px 0}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container"><span>بسم اللہ الرحمن الرحیم</span><span>گاؤں شمخئی، قوم علیشیرزئی، سنٹرل کرم، ضلع کُرم</span></div></div>
+<header><div class="container nav">
+<a class="brand" href="#home"><div class="logo">﷽</div><div><strong>مدرسہ انوارالمدارس</strong><small>ضلع کُرم</small></div></a>
+<nav><a href="#about">تعارف</a><a href="#programs">تعلیمی شعبہ</a><a href="#admin">انتظامیہ</a><a href="#admission">داخلہ</a><a href="#contact">رابطہ</a></nav>
+<a class="btn btn-dark" href="#admission">داخلہ لیں</a>
+</div></header>
+
+<main id="home">
+<section class="hero"><div class="container hero-content">
+<div class="kicker">علم • عمل • اخلاق • قرآن و سنت</div>
+<h1>مدرسہ انوارالمدارس<br><span style="color:#e4c878">ضلع کُرم</span></h1>
+<p>ایک بابرکت علمی و دینی درسگاہ، جہاں نسلِ نو کی دینی تعلیم، اخلاقی تربیت اور اسلامی اقدار کے تحفظ کے لیے خدمت کا سفر جاری ہے۔</p>
+<div class="actions"><a class="btn btn-primary" href="#admission">آن لائن داخلہ فارم</a><a class="btn btn-outline" href="#about">مدرسے کے بارے میں</a></div>
+</div></section>
+
+<section id="about"><div class="container"><div class="section-head"><div class="eyebrow">ہمارا تعارف</div><h2>انوارالمدارس کا سفر</h2></div>
+<div class="about"><article class="card about-text">
+انوار المدارس کا قیام سنہ 2000ء میں ضلع کرم کے مرکزی علاقے سینٹرل کرم میں واقع علیشیرزئی قوم کے تاریخی اور سرسبز گاؤں شمخی میں عمل میں آیا۔ اس عالی شان اور بابرکت دینی درسگاہ کی بنیاد مولانا عبداللطیف حقانی صاحب مدظلہ العالی نے رکھی، جو اس کے بانی اور مہتمم کی حیثیت سے علمی و روحانی رہنمائی کے فرائض انجام دے رہے ہیں، جبکہ ان کی ہمراہی اور نائب مہتمم کے طور پر مولانا ظفر الحق حقانی صاحب مدظلہ العالی نے اس کارِ خیر کی باگ ڈور سنبھالی اور ادارے کو منظم انداز میں آگے بڑھایا۔<br><br>
+گاؤں شمخی اور اس کے گرد و نواح کی تاریخ میں اس سے قبل دینی علوم کی ترویج و اشاعت کے لیے ایسا جامع، منور اور شاہکار علمی مقام موجود نہیں تھا، جس نے آگے چل کر علاقے کی علمی تشنگی کو بجھایا اور تاریک گوشوں کو علم کی روشنی سے منور کیا۔ انوار المدارس نے اپنے قیام کے پہلے دن سے ہی قال اللہ وقال الرسول کی صداؤں کو عام کرنے، نسلِ نو کی اخلاقی و دینی تربیت کرنے اور اسلامی اقدار کے تحفظ میں ایک تاریخی اور وقیع کردار ادا کیا ہے۔<br><br>
+مولانا عبداللطیف حقانی اور ان کے رفقاء کی انمل محنت، اخلاص اور مسلسل جدوجہد کی بدولت یہ ادارہ محض ایک مدرسہ نہیں رہا بلکہ سینٹرل کرم کے عوام کے لیے علم و ہدایت کا ایک منارۂ نور بن کر ابھرا، جہاں سے نکلنے والے علمائے کرام اور حافظانِ قرآن معاشرے میں حق و صداقت کے علمبردار بن کر ابھر رہے ہیں۔
+</article>
+<div class="seal"><div><div class="big">۞</div><h3>قال اللہ ﷻ<br>قال الرسول ﷺ</h3><p>علمِ دین، قرآنِ کریم اور اسلامی تربیت کی خدمت</p><div class="latin">Established 2000</div></div></div>
+</div></div></section>
+
+<section id="programs" style="background:#fff"><div class="container"><div class="section-head"><div class="eyebrow">تعلیمی شعبہ</div><h2>ہمارے پروگرامز</h2><p>طلبہ و طالبات کے لیے دینی تعلیم کے مختلف شعبہ جات۔</p></div>
+<div class="grid">
+<div class="card program"><div class="icon">📖</div><h3>حفظِ قرآن</h3><p>قرآنِ کریم حفظ کرنے کے لیے منظم دینی ماحول۔</p></div>
+<div class="card program"><div class="icon">☪</div><h3>ناظرہ قرآن</h3><p>درست قراءت اور قرآنِ کریم کی بنیادی تعلیم۔</p></div>
+<div class="card program"><div class="icon">🎙</div><h3>تجوید</h3><p>مخارج اور قواعدِ تجوید کے ساتھ تلاوت کی تربیت۔</p></div>
+<div class="card program"><div class="icon">📚</div><h3>درسِ نظامی بنات</h3><p>طالبات کے لیے مکمل درسِ نظامی کا تعلیمی پروگرام۔</p></div>
+</div></div></section>
+
+<section id="admin"><div class="container"><div class="section-head"><div class="eyebrow">انتظامیہ</div><h2>ادارے کی قیادت</h2></div>
+<div class="admin">
+<div class="card person"><div class="avatar">م</div><div><h3>مولانا عبداللطیف حقانی صاحب مدظلہ العالی</h3><p>بانی و مہتمم</p></div></div>
+<div class="card person"><div class="avatar">م</div><div><h3>مولانا ظفر الحق حقانی صاحب مدظلہ العالی</h3><p>نائب مہتمم</p></div></div>
+</div></div></section>
+
+<section id="admission" class="admission"><div class="container"><div class="section-head"><div class="eyebrow">داخلہ</div><h2>آن لائن داخلہ درخواست</h2><p>فارم پُر کریں؛ جمع کرنے پر WhatsApp کے ذریعے مدرسے سے رابطہ کرنے کا آپشن کھلے گا۔</p></div>
+<form class="card form" id="admissionForm">
+<div class="fields">
+<div class="field"><label>طالب علم کا نام</label><input id="name" required></div>
+<div class="field"><label>والد کا نام</label><input id="father" required></div>
+<div class="field"><label>عمر</label><input id="age" type="number" min="3" max="80" required></div>
+<div class="field"><label>موبائل نمبر</label><input id="phone" required></div>
+<div class="field"><label>تعلیمی پروگرام</label><select id="course" required><option value="">منتخب کریں</option><option>حفظِ قرآن</option><option>ناظرہ قرآن</option><option>تجوید</option><option>درسِ نظامی بنات</option></select></div>
+<div class="field"><label>پتہ</label><input id="address" required></div>
+<div class="field full"><label>اضافی معلومات</label><textarea id="message" placeholder="اگر کوئی ضروری معلومات ہو تو یہاں لکھیں"></textarea></div>
+</div><button class="btn btn-dark" type="submit">درخواست WhatsApp پر بھیجیں</button><div class="notice">آپ کی درخواست 03018325431 پر WhatsApp پیغام کی صورت میں تیار ہوگی۔</div>
+</form></div></section>
+
+<section id="contact"><div class="container"><div class="section-head"><div class="eyebrow">رابطہ</div><h2>ہم سے رابطہ کریں</h2></div>
+<div class="contact">
+<div class="card">
+<div class="contact-item"><div class="contact-icon">📍</div><div><b>پتہ</b><p>گاؤں شمخئی، قوم علیشیرزئی، سنٹرل کرم، ضلع کُرم</p></div></div>
+<div class="contact-item"><div class="contact-icon">☎</div><div><b>فون</b><p><a href="tel:03018325431">03018325431</a><br><a href="tel:03339156070">03339156070</a><br><a href="tel:03329809201">03329809201</a></p></div></div>
+</div>
+<div class="mapbox card"><div><div style="font-size:48px">📍</div><h3>Google Maps پر مقام دیکھیں</h3><p>شمخئی، علیشیرزئی، سنٹرل کرم</p><a class="btn btn-primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=مدرسہ+انوارالمدارس+شمخئی+علیشیرزئی+سنٹرل+کرم+ضلع+کرم">Maps کھولیں</a></div></div>
+</div></div></section>
+</main>
+<footer><div class="container"><div class="footer-title">مدرسہ انوارالمدارس ضلع کُرم</div><div>علم و ہدایت کی خدمت</div><div class="copy latin">© 2026 Madrasa Anwar al-Madaris. All rights reserved.</div></div></footer>
+<div class="float"><a class="btn btn-dark" href="https://wa.me/923018325431" target="_blank" aria-label="WhatsApp">◉</a></div>
+<script>
+document.getElementById('admissionForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const msg=`داخلہ درخواست%0A%0Aطالب علم: ${encodeURIComponent(document.getElementById('name').value)}%0Aوالد: ${encodeURIComponent(document.getElementById('father').value)}%0Aعمر: ${encodeURIComponent(document.getElementById('age').value)}%0Aموبائل: ${encodeURIComponent(document.getElementById('phone').value)}%0Aپروگرام: ${encodeURIComponent(document.getElementById('course').value)}%0Aپتہ: ${encodeURIComponent(document.getElementById('address').value)}%0Aاضافی معلومات: ${encodeURIComponent(document.getElementById('message').value)}`;
+ window.open('https://wa.me/923018325431?text='+msg,'_blank');
+});
+</script>
+</body>
+</html>
